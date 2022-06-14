@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -11,13 +12,17 @@ const Home: NextPage = () => {
       </Head>
 
       <nav className="w-full absolute top-0 left-0 p-2">
-        <h1 className='text-2xl font-semibold tracking-tighter'>Nick Douglas.</h1>
+        <h1 className='text-2xl font-semibold tracking-tighter'>Nick Douglas<span className="text-orange-500">.</span></h1>
       </nav>
 
       <main className="container px-4 h-full">
         <header className="h-screen flex justify-center flex-col">
-          <h2 className="text-[80px] leading-[90px] mb-6">A passionate frontend web developer building great things for the web.</h2>
-          <h3 className="text-2xl font-light text-gray-700 leading-[46px] w-3/4">Senior Freelance Frontend Developer</h3>
+          <h2 className="text-[80px] leading-[90px] mb-6">A passionate frontend web developer building great things for the web<span className="text-orange-500">.</span></h2>
+          <h3 className="text-2xl font-light text-gray-700 leading-snug w-3/4">Senior Freelance Frontend Developer<span className="text-orange-500">.</span> Currently a Senior Frontend Engineer at&nbsp;
+            <Link href="https://www.linkedin.com/company/schuettflix/mycompany/" passHref={true}>
+              <a className="text-orange-500 hover:text-green-400 transition-colors">Schüttflix</a>
+            </Link><span className="text-orange-500">.</span>
+          </h3>
         </header>
       </main>
     </div>
