@@ -1,8 +1,52 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Skill from '../components/Skill'
 
 const Home: NextPage = () => {
+  const skills = [
+    {
+      name: 'Vue.js',
+      logo: '/images/Vue.js_Logo_2.svg',
+    },
+    {
+      name: 'Nuxt.js',
+      logo: '/images/Nuxt_logo.svg',
+    },
+    {
+      name: 'React',
+      logo: '/images/React-icon.svg',
+    },
+    {
+      name: 'Next.js',
+      logo: '/images/Nextjs-logo.svg',
+    },
+    {
+      name: 'Javascript',
+      logo: '/images/Unofficial_JavaScript_logo_2.svg',
+    },
+    {
+      name: 'Typescript',
+      logo: '/images/Typescript_logo_2020.svg',
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: '/images/Tailwind_CSS_Logo.svg',
+    },
+    {
+      name: 'Sass/SCSS',
+      logo: '/images/Sass_Logo_Color.svg',
+    },
+    {
+      name: 'Vue Testing Library',
+      logo: '/images/logo-large.png',
+    },
+    {
+      name: 'Storybook',
+      logo: '/images/storybook.svg',
+    },
+  ];
+
   return (
     <div className="font-Poppins font-medium h-full relative">
       <Head>
@@ -18,12 +62,23 @@ const Home: NextPage = () => {
       <main className="container px-4 h-full">
         <header className="h-screen flex justify-center flex-col">
           <h2 className="text-[80px] leading-[90px] mb-6">A passionate frontend web developer building great things for the web<span className="text-orange-500">.</span></h2>
-          <h3 className="text-2xl font-light text-gray-700 leading-snug w-3/4">Senior Freelance Frontend Developer<span className="text-orange-500">.</span> Currently a Senior Frontend Engineer at&nbsp;
+          <h3 className="text-2xl font-light text-gray-700 leading-snug w-3/4">Senior Freelance Frontend Developer<span className="text-orange-500">.</span> Currently I am work as a Senior Frontend Engineer at&nbsp;
             <Link href="https://www.linkedin.com/company/schuettflix/mycompany/" passHref={true}>
-              <a className="text-orange-500 hover:text-green-400 transition-colors">Schüttflix</a>
+              <a className="text-orange-500 hover:text-green-400 transition-colors" rel="noreferrer" target="_blank">Schüttflix</a>
             </Link><span className="text-orange-500">.</span>
           </h3>
         </header>
+
+        <section className="-mt-16">
+          <h2 className="text-6xl leading-none">Skills<span className="text-orange-500">.</span></h2>
+          <h4 className="text-xl font-light text-gray-700 mb-10">Things I know<span className="text-orange-500">.</span></h4>
+
+          <div className="grid grid-cols-6">
+            {skills.map(skill => (
+              <Skill name={skill.name} icon={skill.logo} key={skill.name} />
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   )
