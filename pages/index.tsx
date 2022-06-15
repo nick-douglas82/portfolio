@@ -14,6 +14,10 @@ const Home: NextPage = () => {
       logo: '/images/Nuxt_logo.svg',
     },
     {
+      name: 'Vuex',
+      logo: '/images/Vue.js_Logo_2.svg',
+    },
+    {
       name: 'React',
       logo: '/images/React-icon.svg',
     },
