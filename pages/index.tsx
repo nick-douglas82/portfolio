@@ -42,6 +42,10 @@ const Home: NextPage = () => {
       logo: '/images/logo-large.png',
     },
     {
+      name: 'GraphQL',
+      logo: '/images/GraphQL_Logo.svg',
+    },
+    {
       name: 'Storybook',
       logo: '/images/storybook.svg',
     },
