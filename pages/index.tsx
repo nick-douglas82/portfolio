@@ -71,7 +71,7 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
         </section>
 
         <section className="pb-36">
-          <h2 className="text-6xl leading-none">Projects<span className="text-orange-500">.</span></h2>
+          <h2 className="text-6xl leading-tight">Projects<span className="text-orange-500">.</span></h2>
           <h4 className="text-xl font-light text-gray-700 mb-10">Things I&apos;ve worked on<span className="text-orange-500">.</span></h4>
 
           <div className="grid grid-cols-3 gap-6">
