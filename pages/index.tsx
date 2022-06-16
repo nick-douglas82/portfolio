@@ -24,6 +24,9 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
         <title>Nick Douglas | Frontend Web Developer</title>
         <meta name="description" content="Nick Douglas - Frontend web developer - portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <link rel="canonical" href="https://www.nick-douglas.co.uk/" />
       </Head>
 
       <nav className="w-full absolute top-0 left-0 p-2 flex justify-between">
