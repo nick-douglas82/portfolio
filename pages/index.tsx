@@ -26,7 +26,6 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
-        <link rel="canonical" href="https://www.nick-douglas.co.uk/" />
       </Head>
 
       <nav className="w-full absolute top-0 left-0 p-2 flex justify-between">
