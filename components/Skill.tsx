@@ -1,21 +1,23 @@
 import Image from 'next/image'
 
-export type SkillProps = {
+export type TSkill = {
   name: string,
   icon: string,
+  hideName?: boolean,
+  size?: 'sm' | 'lg',
 }
 
-const Skill = ({ name, icon }: SkillProps) => {
+const Skill = ({ name, icon, hideName = false, size = 'lg' }: TSkill) => {
+  const iconSize = size === 'sm' ? 'h-6 w-6' : 'h-12 w-12';
   return (
     <>
-      <div className="mb-10 pr-7">
-        <div className="w-12 h-12 relative">
-          <Image src={icon} alt={name} layout="fill" />
-        </div>
-        <div className="text-lg mt-5">
-          {name}
-        </div>
+      <div className={`${iconSize} relative`}>
+        <Image src={icon} alt={name} layout="fill" />
       </div>
+      {!hideName && (
+        <div className="text-lg mt-5 leading-tight">{name}</div>
+      )}
+
     </>
   )
 }

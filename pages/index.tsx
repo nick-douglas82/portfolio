@@ -1,60 +1,23 @@
-import type { NextPage } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
+import ProjectCard from '../components/ProjectCard'
 import Skill from '../components/Skill'
 
-const Home: NextPage = () => {
-  const skills = [
-    {
-      name: 'Vue.js',
-      logo: '/images/Vue.js_Logo_2.svg',
-    },
-    {
-      name: 'Nuxt.js',
-      logo: '/images/Nuxt_logo.svg',
-    },
-    {
-      name: 'Vuex',
-      logo: '/images/Vue.js_Logo_2.svg',
-    },
-    {
-      name: 'React',
-      logo: '/images/React-icon.svg',
-    },
-    {
-      name: 'Next.js',
-      logo: '/images/Nextjs-logo.svg',
-    },
-    {
-      name: 'Javascript',
-      logo: '/images/Unofficial_JavaScript_logo_2.svg',
-    },
-    {
-      name: 'Typescript',
-      logo: '/images/Typescript_logo_2020.svg',
-    },
-    {
-      name: 'Tailwind CSS',
-      logo: '/images/Tailwind_CSS_Logo.svg',
-    },
-    {
-      name: 'Sass/SCSS',
-      logo: '/images/Sass_Logo_Color.svg',
-    },
-    {
-      name: 'Vue Testing Library',
-      logo: '/images/logo-large.png',
-    },
-    {
-      name: 'GraphQL',
-      logo: '/images/GraphQL_Logo.svg',
-    },
-    {
-      name: 'Storybook',
-      logo: '/images/storybook.svg',
-    },
-  ];
+import { projects } from '../data/projects'
+import { skills } from '../data/skills'
 
+export const getStaticProps = async () => {
+  return {
+    props: {
+      projects,
+      skills,
+    },
+  }
+}
+
+const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="font-Poppins font-medium h-full relative">
       <Head>
@@ -63,8 +26,25 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="w-full absolute top-0 left-0 p-2">
+      <nav className="w-full absolute top-0 left-0 p-2 flex justify-between">
         <h1 className='text-2xl font-semibold tracking-tighter'>Nick Douglas<span className="text-orange-500">.</span></h1>
+
+        <ul className="flex gap-3 fixed top-2 right-2">
+          <li className="relative w-8 h-8">
+            <Link href="https://www.linkedin.com/in/nickdouglas/" passHref={true}>
+              <a rel="noreferrer" target="_blank" className="hover:opacity-60 transition-all">
+                <Image src="/images/linkedin.svg" alt="Linkedin" layout="fill" />
+              </a>
+            </Link>
+          </li>
+          <li className="relative w-8 h-8">
+            <Link href="https://github.com/nick-douglas82" passHref={true}>
+              <a rel="noreferrer" target="_blank" className="hover:opacity-60 transition-all">
+                <Image src="/images/github.svg" alt="Github" layout="fill" />
+              </a>
+            </Link>
+          </li>
+        </ul>
       </nav>
 
       <main className="container px-4 h-full">
@@ -77,13 +57,26 @@ const Home: NextPage = () => {
           </h3>
         </header>
 
-        <section className="-mt-16">
+        <section className="-mt-16 pb-16">
           <h2 className="text-6xl leading-none">Skills<span className="text-orange-500">.</span></h2>
           <h4 className="text-xl font-light text-gray-700 mb-10">Things I know<span className="text-orange-500">.</span></h4>
 
           <div className="grid grid-cols-6">
             {skills.map(skill => (
-              <Skill name={skill.name} icon={skill.logo} key={skill.name} />
+              <div className="mb-10 pr-7" key={skill.name}>
+                <Skill name={skill.name} icon={skill.icon} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="pb-36">
+          <h2 className="text-6xl leading-none">Projects<span className="text-orange-500">.</span></h2>
+          <h4 className="text-xl font-light text-gray-700 mb-10">Things I&apos;ve worked on<span className="text-orange-500">.</span></h4>
+
+          <div className="grid grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard title={project.title} location={project.location} type={project.type} skills={project.skills} itemIndex={index} key={project.title} />
             ))}
           </div>
         </section>
