@@ -27,9 +27,9 @@ const ProjectCard = ({ title, location, type, skills, itemIndex }: Project) => {
     'shadow-sky-500/25',
   ]
   return (
-    <div className={`bg-white rounded-2xl p-7 h-72 flex flex-col shadow-lg ${shadows[itemIndex]}`}>
-      <h2 className="text-2xl leading-snug" dangerouslySetInnerHTML={{ __html: title }} />
-      <ul className="text-sm flex list-none text-gray-400 mt-6 gap-6">
+    <div className={`bg-white rounded-2xl p-7 h-60 lg:h-72 flex flex-col shadow-lg ${shadows[itemIndex]}`}>
+      <h2 className="text-xl md:text-lg lg:text-2xl leading-snug" dangerouslySetInnerHTML={{ __html: title }} />
+      <ul className="text-sm flex list-none text-gray-400 mt-2 lg:mt-6 gap-6">
         <li className="flex">
           <LocationMarkerIcon className="h-5 w-5 text-gray-400 mr-1" />
           {location}
