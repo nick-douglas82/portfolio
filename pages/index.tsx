@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import { DocumentTextIcon } from '@heroicons/react/solid'
+import LinkedIn from '../components/LinkedIn'
+import GitHub from '../components/GitHub'
 import ProjectCard from '../components/ProjectCard'
 import Skill from '../components/Skill'
 
@@ -32,25 +34,25 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
       <nav className="absolute top-0 left-0 flex justify-between w-full px-4 py-2 lg:p-2">
         <h1 className='text-2xl font-semibold tracking-tighter md:text-4xl lg:text-2xl'>Nick Douglas<span className="text-orange-500">.</span></h1>
 
-        <ul className="fixed flex gap-3 top-2 right-4 lg:right-2">
-          <li className="relative w-8 h-9 -top-1">
+        <ul className="fixed flex gap-2 top-2 right-4 lg:right-2">
+          <li className="relative -top-1">
             <Link href="/nick_douglas_cv.pdf" passHref={true}>
               <a rel="noreferrer" target="_blank" className="transition-all hover:opacity-60">
-                <DocumentTextIcon className='w-10 h-10' />
+                <DocumentTextIcon className='text-gray-400 h-7 w-7' />
               </a>
             </Link>
           </li>
-          <li className="relative w-8 h-8 bg-white rounded-xl">
+          <li className="relative w-6 h-6 bg-white rounded-xl">
             <Link href="https://www.linkedin.com/in/nickdouglas/" passHref={true}>
               <a rel="noreferrer" target="_blank" className="transition-all hover:opacity-60">
-                <Image src="/images/linkedin.svg" alt="Linkedin" layout="fill" />
+                <LinkedIn className='w-6 h-6 text-gray-400' />
               </a>
             </Link>
           </li>
-          <li className="relative w-8 h-8 bg-white rounded-xl">
+          <li className="relative w-6 h-6 bg-white rounded-xl">
             <Link href="https://github.com/nick-douglas82" passHref={true}>
               <a rel="noreferrer" target="_blank" className="transition-all hover:opacity-60">
-                <Image src="/images/github.svg" alt="Github" layout="fill" />
+                <GitHub className='w-6 h-6 text-gray-400' />
               </a>
             </Link>
           </li>
