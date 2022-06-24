@@ -72,7 +72,7 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
           <h4 className="mb-10 text-lg font-light text-gray-700 md:text-xl">Things I know<span className="text-orange-500">.</span></h4>
           <div className="grid grid-cols-4 gap-4 md:grid-cols-5 lg:grid-cols-6">
             {skills.map(skill => (
-              <div className="mb-6 lg:mb-10" key={skill.name}>
+              <div className="h-24 mb-6 lg:mb-10" key={skill.name}>
                 <Skill name={skill.name} icon={skill.icon} />
               </div>
             ))}
