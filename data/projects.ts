@@ -1,5 +1,27 @@
 export const projects = [
   {
+    title: "Nuxt 3 e-commerce platform with Supabase & Vercel serverless functions",
+    location: "Remote",
+    type: {
+      text: "Personal Project",
+      type: "personal",
+    },
+    skills: [
+      {
+        name: "Nuxt.js",
+        icon: "/images/Nuxt_logo.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "/images/Tailwind_CSS_Logo.svg",
+      },
+    ],
+  },
+  {
     title: "Motor & Home insurance selling websites, forms and portals",
     location: "Remote",
     type: {
