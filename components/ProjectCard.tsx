@@ -16,6 +16,8 @@ export interface Project {
 
 const ProjectCard = ({ title, location, type, skills, itemIndex }: Project) => {
   const shadows = [
+    'shadow-sky-500/25',
+    'shadow-lime-500/25',
     'shadow-yellow-300/25',
     'shadow-cyan-300/25',
     'shadow-red-500/25',
@@ -28,18 +30,18 @@ const ProjectCard = ({ title, location, type, skills, itemIndex }: Project) => {
   ]
   return (
     <div className={`bg-white rounded-2xl p-7 h-60 lg:h-72 flex flex-col shadow-lg ${shadows[itemIndex]}`}>
-      <h2 className="text-xl md:text-lg lg:text-2xl leading-snug" dangerouslySetInnerHTML={{ __html: title }} />
-      <ul className="text-sm flex list-none text-gray-400 mt-2 lg:mt-6 gap-6">
+      <h2 className="text-xl leading-snug md:text-lg lg:text-2xl" dangerouslySetInnerHTML={{ __html: title }} />
+      <ul className="flex gap-6 mt-2 text-sm text-gray-400 list-none lg:mt-6">
         <li className="flex">
-          <LocationMarkerIcon className="h-5 w-5 text-gray-400 mr-1" />
+          <LocationMarkerIcon className="w-5 h-5 mr-1 text-gray-400" />
           {location}
         </li>
         <li className="flex">
-          <ClockIcon className="h-5 w-5 text-gray-400 mr-1" />
+          <ClockIcon className="w-5 h-5 mr-1 text-gray-400" />
           {type.text}
         </li>
       </ul>
-      <div className="mt-auto flex gap-2">
+      <div className="flex gap-2 mt-auto">
         {skills.map(skill => (
           <Skill name={skill.name} icon={skill.icon} hideName size="sm" key={skill.name} />
         ))}
