@@ -16,8 +16,8 @@ export interface Project {
 
 const ProjectCard = ({ title, location, type, skills, itemIndex }: Project) => {
   const shadows = [
-    'shadow-sky-500/25',
-    'shadow-lime-500/25',
+    'shadow-emerald-500/25',
+    'shadow-rose-500/25',
     'shadow-yellow-300/25',
     'shadow-cyan-300/25',
     'shadow-red-500/25',
