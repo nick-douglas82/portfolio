@@ -45,7 +45,7 @@ export const skills = [
   },
   {
     name: "Cypress",
-    icon: "/images/Cypress_Logotype_Dark-Color.png",
+    icon: "/images/Cypress_Logotype_Dark-Color.svg",
   },
   {
     name: "GraphQL",
