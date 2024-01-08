@@ -20,12 +20,16 @@ export const skills = [
     icon: "/images/Nextjs-logo.svg",
   },
   {
-    name: "Javascript",
-    icon: "/images/Unofficial_JavaScript_logo_2.svg",
+    name: "Svelte",
+    icon: "/images/Svelte_Logo.svg",
   },
   {
     name: "Typescript",
     icon: "/images/Typescript_logo_2020.svg",
+  },
+  {
+    name: "Javascript",
+    icon: "/images/Unofficial_JavaScript_logo_2.svg",
   },
   {
     name: "Tailwind CSS",
@@ -38,6 +42,10 @@ export const skills = [
   {
     name: "Vue Testing Library",
     icon: "/images/logo-large.png",
+  },
+  {
+    name: "Cypress",
+    icon: "/images/Cypress_Logotype_Dark-Color.png",
   },
   {
     name: "GraphQL",
