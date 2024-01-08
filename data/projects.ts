@@ -1,5 +1,61 @@
 export const projects = [
   {
+    title: "German Fibre internet roll out web application",
+    location: "Remote",
+    type: {
+      text: "Contract",
+      type: "contract",
+    },
+    skills: [
+      {
+        name: "Next.js",
+        icon: "/images/Nextjs-logo.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "tRPC",
+        icon: "/images/trpc.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "/images/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Storybook",
+        icon: "/images/storybook.svg",
+      },
+      {
+        name: "Cypress",
+        icon: "/images/Cypress_Logotype_Dark-Color.svg",
+      },
+    ],
+  },
+  {
+    title: "Video & Chat web app simlar to Slack and Discord",
+    location: "Remote",
+    type: {
+      text: "Contract",
+      type: "contract",
+    },
+    skills: [
+      {
+        name: "Svelte",
+        icon: "/images/Svelte_Logo.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "/images/Tailwind_CSS_Logo.svg",
+      },
+    ],
+  },
+  {
     title: "Nuxt 3 e-commerce platform with Supabase & Vercel serverless functions",
     location: "Remote",
     type: {

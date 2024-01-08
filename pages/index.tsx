@@ -62,10 +62,11 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
       <main className="container h-full px-4">
         <header className="flex flex-col justify-center h-screen">
           <h2 className="text-3xl md:text-6xl leading-tight lg:text-[80px] lg:leading-[90px] mb-6">A passionate frontend web developer building great things for the web<span className="text-orange-500">.</span></h2>
-          <h3 className="w-full text-xl font-light leading-snug text-gray-700 md:text-2xl md:w-3/4">Senior Freelance Frontend Developer<span className="text-orange-500">.</span> Currently I am work as a Senior Frontend Developer at&nbsp;
+          <h3 className="w-full text-xl font-light leading-snug text-gray-700 md:text-2xl md:w-3/4">Senior Freelance Frontend Developer
+            {/* <span className="text-orange-500">.</span> Currently I am work as a Senior Frontend Developer at&nbsp;
             <Link href="https://www.madebysauce.com/" passHref={true}>
               <a className="text-orange-500 transition-colors hover:text-green-400" rel="noreferrer" target="_blank">Made by Sauce</a>
-            </Link><span className="text-orange-500">.</span>
+            </Link><span className="text-orange-500">.</span> */}
           </h3>
         </header>
 
