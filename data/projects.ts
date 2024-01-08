@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "German Fibre internet roll out web application",
+    title: "German Fibre internet rollout project management web application",
     location: "Remote",
     type: {
       text: "Contract",
