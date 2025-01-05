@@ -1,5 +1,31 @@
 export const projects = [
   {
+    title: "Mortgage application web app",
+    location: "Remote & on-site",
+    type: {
+      text: "Contract",
+      type: "contract",
+    },
+    skills: [
+      {
+        name: "Vue.js",
+        icon: "/images/Vue.js_Logo_2.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "Vue Testing Library",
+        icon: "/images/logo-large.png",
+      },
+      {
+        name: "Bootstrap",
+        icon: "/images/Bootstrap_logo.svg",
+      },
+    ],
+  },
+  {
     title: "German Fibre internet rollout project management web application",
     location: "Remote",
     type: {

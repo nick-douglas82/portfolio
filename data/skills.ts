@@ -36,6 +36,10 @@ export const skills = [
     icon: "/images/Tailwind_CSS_Logo.svg",
   },
   {
+    name: "Bootstrap",
+    icon: "/images/Bootstrap_logo.svg",
+  },
+  {
     name: "Sass/SCSS",
     icon: "/images/Sass_Logo_Color.svg",
   },
