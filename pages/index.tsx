@@ -31,35 +31,29 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
         <link rel="apple-touch-icon" href="/icon.png" />
       </Head>
 
-      <nav className="absolute top-0 left-0 flex justify-between w-full px-4 py-2 lg:p-2">
+      <nav className="flex absolute top-0 left-0 justify-between px-4 py-2 w-full lg:p-2">
         <h1 className='text-2xl font-semibold tracking-tighter md:text-4xl lg:text-2xl'>Nick Douglas<span className="text-orange-500">.</span></h1>
 
-        <ul className="fixed flex gap-2 top-2 right-4 lg:right-2">
+        <ul className="flex fixed top-2 right-4 gap-2 lg:right-2">
           <li className="relative -top-1">
-            <Link href="/nick_douglas_cv.pdf" passHref={true}>
-              <a rel="noreferrer" target="_blank" className="transition-all hover:opacity-60">
-                <DocumentTextIcon className='text-gray-400 h-7 w-7' />
-              </a>
+            <Link rel="noreferrer" href="/nick_douglas_cv.pdf" passHref={true} target="_blank" className="transition-all hover:opacity-60">
+              <DocumentTextIcon className='w-7 h-7 text-gray-400' />
             </Link>
           </li>
           <li className="relative w-6 h-6 bg-white rounded-xl">
-            <Link href="https://www.linkedin.com/in/nickdouglas/" passHref={true}>
-              <a rel="noreferrer" target="_blank" className="transition-all hover:opacity-60">
-                <LinkedIn className='w-6 h-6 text-gray-400' />
-              </a>
+            <Link rel="noreferrer" href="https://www.linkedin.com/in/nickdouglas/" passHref={true} target="_blank" className="transition-all hover:opacity-60">
+              <LinkedIn className='w-6 h-6 text-gray-400' />
             </Link>
           </li>
           <li className="relative w-6 h-6 bg-white rounded-xl">
-            <Link href="https://github.com/nick-douglas82" passHref={true}>
-              <a rel="noreferrer" target="_blank" className="transition-all hover:opacity-60">
-                <GitHub className='w-6 h-6 text-gray-400' />
-              </a>
+            <Link rel="noreferrer" href="https://github.com/nick-douglas82" passHref={true} target="_blank" className="transition-all hover:opacity-60">
+              <GitHub className='w-6 h-6 text-gray-400' />
             </Link>
           </li>
         </ul>
       </nav>
 
-      <main className="container h-full px-4">
+      <main className="container px-4 h-full">
         <header className="flex flex-col justify-center h-screen">
           <h2 className="text-3xl md:text-6xl leading-tight lg:text-[80px] lg:leading-[90px] mb-6">A passionate frontend web developer building great things for the web<span className="text-orange-500">.</span></h2>
           <h3 className="w-full text-xl font-light leading-snug text-gray-700 md:text-2xl md:w-3/4">Senior Freelance Frontend Developer<span className="text-orange-500">.</span>
@@ -75,7 +69,7 @@ const Home = ({ projects, skills }: InferGetStaticPropsType<typeof getStaticProp
           <h4 className="mb-10 text-lg font-light text-gray-700 md:text-xl">Things I know<span className="text-orange-500">.</span></h4>
           <div className="grid grid-cols-4 gap-4 md:grid-cols-5 lg:grid-cols-6">
             {skills.map(skill => (
-              <div className="h-24 mb-6 lg:mb-10" key={skill.name}>
+              <div className="mb-6 h-24 lg:mb-10" key={skill.name}>
                 <Skill name={skill.name} icon={skill.icon} />
               </div>
             ))}
