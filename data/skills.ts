@@ -63,4 +63,8 @@ export const skills = [
     name: "Contentful",
     icon: "/images/contentful.svg",
   },
+  {
+    name: "GSAP",
+    icon: "/images/gsap.svg",
+  },
 ];

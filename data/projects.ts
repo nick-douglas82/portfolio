@@ -1,5 +1,35 @@
 export const projects = [
   {
+    title: "Warranties & Claims Portal",
+    location: "Remote",
+    type: {
+      text: "Contract",
+      type: "contract",
+    },
+    skills: [
+      {
+        name: "Vue.js",
+        icon: "/images/Vue.js_Logo_2.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "/images/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Cypress",
+        icon: "/images/Cypress_Logotype_Dark-Color.svg",
+      },
+      {
+        name: "Laravel",
+        icon: "/images/laravel.svg",
+      },
+    ],
+  },
+  {
     title: "Animated Campaign Page",
     location: "Remote",
     type: {
