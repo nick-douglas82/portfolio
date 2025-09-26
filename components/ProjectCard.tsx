@@ -27,17 +27,36 @@ const ProjectCard = ({ title, location, type, skills, itemIndex }: Project) => {
     'shadow-pink-500/25',
     'shadow-lime-500/25',
     'shadow-sky-500/25',
+    'shadow-purple-500/25',
+    'shadow-violet-500/25',
+    'shadow-indigo-500/25',
+    'shadow-blue-500/25',
+    'shadow-green-500/25',
+    'shadow-amber-500/25',
+    'shadow-yellow-500/25',
+    'shadow-orange-500/25',
+    'shadow-red-500/25',
+    'shadow-pink-500/25',
+    'shadow-purple-500/25',
+    'shadow-violet-500/25',
+    'shadow-indigo-500/25',
+    'shadow-blue-500/25',
+    'shadow-green-500/25',
+    'shadow-amber-500/25',
+    'shadow-yellow-500/25',
+    'shadow-orange-500/25',
+    'shadow-red-500/25',
   ]
   return (
-    <div className={`bg-white rounded-2xl p-7 h-60 lg:h-72 flex flex-col shadow-lg ${shadows[itemIndex]}`}>
+    <div className={`flex flex-col p-7 h-60 bg-white rounded-2xl shadow-lg lg:h-72 ${shadows[itemIndex]}`}>
       <h2 className="text-xl leading-snug md:text-lg lg:text-2xl" dangerouslySetInnerHTML={{ __html: title }} />
-      <ul className="flex gap-6 mt-2 text-sm text-gray-400 list-none lg:mt-6">
+      <ul className="flex gap-6 mt-2 text-sm list-none text-gray-400 lg:mt-6">
         <li className="flex">
-          <LocationMarkerIcon className="w-5 h-5 mr-1 text-gray-400" />
+          <LocationMarkerIcon className="mr-1 w-5 h-5 text-gray-400" />
           {location}
         </li>
         <li className="flex">
-          <ClockIcon className="w-5 h-5 mr-1 text-gray-400" />
+          <ClockIcon className="mr-1 w-5 h-5 text-gray-400" />
           {type.text}
         </li>
       </ul>
