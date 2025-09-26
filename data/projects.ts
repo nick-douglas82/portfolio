@@ -1,5 +1,53 @@
 export const projects = [
   {
+    title: "Animated Campaign Page",
+    location: "Remote",
+    type: {
+      text: "Contract",
+      type: "contract",
+    },
+    skills: [
+      {
+        name: "Vue.js",
+        icon: "/images/Vue.js_Logo_2.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "Bootstrap",
+        icon: "/images/Bootstrap_logo.svg",
+      },
+      {
+        name: "GSAP",
+        icon: "/images/gsap.svg",
+      },
+    ],
+  },
+  {
+    title: "PDF Presentation Generator",
+    location: "Remote",
+    type: {
+      text: "Contract",
+      type: "contract",
+    },
+    skills: [
+      {
+        name: "Vue.js",
+        icon: "/images/Vue.js_Logo_2.svg",
+      },
+      {
+        name: "Typescript",
+        icon: "/images/Typescript_logo_2020.svg",
+      },
+      {
+        name: "Bootstrap",
+        icon: "/images/Bootstrap_logo.svg",
+      },
+    ],
+  },
+  {
     title: "Mortgage application web app",
     location: "Remote & on-site",
     type: {
