@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+}
+
+@theme {  
+  --color-primary: #f97316;
+  --color-primary-hover: #ea580c;
+  --color-focus: #ffedd5;
+  --color-callout: #fff7ed;
+
+  --color-foreground: #111827;
+  --color-body: #374151;
+  --color-secondary: #4b5563;
+  --color-muted: #6b7280;
+  --color-caption: #9ca3af;
+
+  --color-border: #e5e7eb;
+  --color-divider: #f3f4f6;
+  --color-surface: #f9fafb;
+  --color-background: #ffffff;
+}
