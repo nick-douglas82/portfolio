@@ -21,3 +21,52 @@
   --color-surface: #f9fafb;
   --color-background: #ffffff;
 }
+
+
+@utility type-section {
+  @apply text-4xl font-bold tracking-tight leading-none;
+
+  @variant md {
+    @apply text-5xl;
+  }
+}
+
+@utility type-subsection {
+  @apply text-3xl font-semibold tracking-tight;
+}
+
+@utility type-title {
+  @apply text-lg font-semibold;
+}
+
+@utility type-lead {
+  @apply text-2xl font-medium tracking-tight leading-snug;
+
+  @variant md {
+    @apply text-3xl;
+  }
+}
+
+@utility type-row-title {
+  @apply text-xl font-medium tracking-tight;
+
+  @variant md {
+    @apply text-2xl;
+  }
+}
+
+@utility type-body {
+  @apply text-[17px] leading-relaxed text-body;
+}
+
+@utility type-muted {
+  @apply text-[15px] text-muted;
+}
+
+@utility type-label {
+  @apply text-[13px] text-muted;
+}
+
+@utility type-caption {
+  @apply text-xs text-caption;
+}
