@@ -14,7 +14,12 @@ const headerStyles = {
   h4: "text-lg font-semibold",
 };
 
-export default function Header({ as, dot = true, className, children }: Props) {
+export default function Heading({
+  as,
+  dot = true,
+  className,
+  children,
+}: Props) {
   const Component = as;
 
   return (

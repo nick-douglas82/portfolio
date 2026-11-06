@@ -1,6 +1,7 @@
 type Props = {
   id?: string;
   spacing?: "hero" | "default" | "tight";
+  className?: string;
   children: React.ReactNode;
 };
 
@@ -10,9 +11,14 @@ const spacingStyles = {
   tight: "py-8",
 };
 
-export default function Section({ id, spacing = "default", children }: Props) {
+export default function Section({
+  id,
+  spacing = "default",
+  className,
+  children,
+}: Props) {
   return (
-    <section className={spacingStyles[spacing]} id={id}>
+    <section className={`${spacingStyles[spacing]} ${className ?? ""}`} id={id}>
       {children}
     </section>
   );

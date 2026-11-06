@@ -15,7 +15,7 @@ export default function SiteHeader({ links }: Props) {
         nd
         <Dot />
       </Link>
-      <nav className="flex flex-wrap items-center gap-6 text-sm">
+      <nav className="flex flex-wrap items-center gap-6 text-sm text-[17px] leading-relaxed text-gray-700 text-pretty">
         {links.map((link, index) => (
           <Link href={link.href} key={`${link.href}-${index}`}>
             {link.label}

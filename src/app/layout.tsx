@@ -17,7 +17,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} bg-color-background text-color-foreground`}>{children}</body>
+      <body
+        className={`${poppins.variable} bg-color-background text-color-foreground font-sans`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
